@@ -1,6 +1,7 @@
-import viandaexpressImg from "../../assets/projectsImages/viandaexpressImg.png";
+import viandaexpressImg from "../../assets/projectsImages/viandaExpress.png";
 import videogamesPiImg from "../../assets/projectsImages/videogamesPI.png";
-import vibiImg from "../../assets/projectsImages/vibiImg.png";
+import portfolioImg from "../../assets/projectsImages/Portafolio.png";
+import vibiImg from "../../assets/projectsImages/VIBI.png";
 const dataRovalettiProjects = [
   {
     name: "Vibi",
@@ -82,6 +83,27 @@ const dataRovalettiProjects = [
     youtube:null,
     repository: "https://www.github.com/gastondvoskin/PFecommerce11B",
     image:videogamesPiImg,
+  },
+  {
+    name: "Portfolio",
+    description:
+      "This portoflio was developed from scratch by Gastón Dvoskin and Santiago Rovaletti.",
+    technologies: [
+      "JavaScript",
+      "React",
+      "Tailwind",
+      "NodeJs",
+      "Express",
+      "SendGrid",
+    ],
+    tasks: [
+
+    ],
+    deploy: "https://gaston-dvoskin.vercel.app/",
+    youtube:
+      "",
+    repository: "https://github.com/santirova/Portfolio",
+    image: portfolioImg,
   },
 ];
 

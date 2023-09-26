@@ -1,6 +1,30 @@
 import viandaexpressImg from "../../assets/projectsImages/viandaexpressImg.png";
 import videogamesPiImg from "../../assets/projectsImages/videogamesPI.png";
+import vibiImg from "../../assets/projectsImages/vibiImg.png";
 const dataRovalettiProjects = [
+  {
+    name: "Vibi",
+    description:
+      "Vibi is a startup committed to democratizing access to the first home in Peru. This web is under construction",
+    technologies: [
+      "TypeScript",
+      "React",
+      "NextJS",
+      "Tailwind",
+      "Figma",
+      "NodeJs",
+      "Express",
+      "Prisma",
+    ],
+    tasks: [
+
+    ],
+    deploy: "https://vi-373evpjot-eugeniagramajo-s-team.vercel.app/home",
+    youtube:
+      "",
+    repository: "https://github.com/EugeniaGramajo/vibi",
+    image: vibiImg,
+  },
   {
     name: "Vianda express",
     description:

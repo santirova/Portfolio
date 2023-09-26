@@ -18,9 +18,9 @@ const TechnologiesContainer = () => {
   ];
 
   return (
-    <section className="bg-mybg2 w-screen  dark:bg-mybg2d px-12 py-24" name="technologies">
+    <section className="bg-mybg2 w-full  dark:bg-mybg2d px-12 py-24" name="technologies">
       <div className="container mx-auto">
-        <h1 className="text-3xl md:text-5xl font-bold text-myacc dark:text-myaccd mb-8 text-center">
+        <h1 className="text-3xl md:text-5xl font-semibold text-myacc dark:text-myaccd mb-12 text-center">
           TECHNOLOGIES
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

@@ -6,10 +6,10 @@ const Contact = () => {
   return (
     <main
       name="contact"
-      className="flex flex-col w-full items-center pt-24 pb-24 bg-mybg1 dark:bg-mybg1d"
+      className="flex flex-col w-full items-center py-24 bg-mybg1 dark:bg-mybg1d"
     >
       <div className="flex flex-col items-center w-4/5 ">
-      <h1 className="mb-16 text-3xl font-bold text-myacc dark:text-myaccd md:text-5xl">CONTACT</h1>
+      <h1 className="mb-12 text-3xl font-semibold text-myacc dark:text-myaccd md:text-5xl">CONTACT</h1>
         <p className="font-sans max-w-3xl text-center">{TEXT}</p>
         <Form />
         <ContactIcons />

@@ -18,23 +18,23 @@ const TechnologiesContainer = () => {
   ];
 
   return (
-    <section
-      className="flex flex-col w-full items-center pt-24 pb-24 bg-mybg2 dark:bg-mybg2d"
-      name="technologies"
-    >
-      <div className="flex flex-col w-4/5 items-center">
-        
-        <h1 className="mb-16 text-3xl font-bold text-myacc dark:text-myaccd md:text-5xl">
+    <section className="bg-mybg2 w-screen  dark:bg-mybg2d px-12 py-24" name="technologies">
+      <div className="container mx-auto">
+        <h1 className="text-3xl md:text-5xl font-bold text-myacc dark:text-myaccd mb-8 text-center">
           TECHNOLOGIES
         </h1>
-
-        {technologies.map((element, index) => {
-          return <TechnologiesArticle key={index} label={element.label} technologiesArray={element.technologiesArray} />;
-        })}
-
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {technologies.map((element, index) => (
+            <TechnologiesArticle
+              key={index}
+              label={element.label}
+              technologiesArray={element.technologiesArray}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );
 };
 
-export default TechnologiesContainer;
+export default TechnologiesContainer

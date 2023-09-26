@@ -25,7 +25,7 @@ const Projects = () => {
   return (
     <section
       name="projects"
-      className="flex flex-col w-full items-center pt-24 pb-24 bg-mybg1 dark:bg-mybg1d"
+      className="flex flex-col w-full items-center py-24 bg-mybg1 dark:bg-mybg1d"
     >
       <div className="flex flex-col w-4/5 items-center">
         <h1 className="mb-16 text-3xl font-bold text-myacc dark:text-myaccd md:text-5xl">PROJECTS</h1>

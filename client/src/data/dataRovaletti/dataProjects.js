@@ -99,7 +99,7 @@ const dataRovalettiProjects = [
     tasks: [
 
     ],
-    deploy: "https://gaston-dvoskin.vercel.app/",
+    deploy: "https://santiagorovaletti.vercel.app/",
     youtube:
       "",
     repository: "https://github.com/santirova/Portfolio",

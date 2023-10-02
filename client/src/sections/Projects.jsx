@@ -35,7 +35,6 @@ const Projects = () => {
             <div
               key={index}
               className="flex mb-12 items-center"
-              onClick={() => openProjectDetail(project)}
             >
               <div className="w-1/3">
                 <img

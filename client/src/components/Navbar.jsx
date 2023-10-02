@@ -1,5 +1,5 @@
-import { useState } from "react";
-import Nav_Logo from "./Nav_Logo"; 
+import { useState, useEffect } from "react";
+import Nav_Logo from "./Nav_Logo";
 import Nav_Themes from "./Nav_Themes";
 import Nav_LinksContainerSmall from "./Nav_LinksContainerSmall";
 import Nav_LinksContainerLarge from "./Nav_LinksContainerLarge";
@@ -11,14 +11,23 @@ import dvoskin from "../assets/profileImage/dvoskin.jpg";
 import rovaletti from "../assets/profileImage/rovaletti.jpg";
 
 const Navbar = () => {
-  const [darkMode, setDarkMode] = useState(false);
+  const isDarkModeEnabled = localStorage.getItem("darkMode") === "true";
+  const [darkMode, setDarkMode] = useState(isDarkModeEnabled);
 
-  const html = document.querySelector("html");
+  useEffect(() => {
+    if (darkMode) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [darkMode]);
 
   const toggleDarkMode = () => {
-    html.classList.toggle("dark");
-    setDarkMode(!darkMode);
+    const newDarkMode = !darkMode;
+    setDarkMode(newDarkMode);
+    localStorage.setItem("darkMode", newDarkMode.toString());
   };
+
   const dataOwner = import.meta.env.VITE_DATAOWNER;
   const ownerName = dataOwner === "dvoskin" ? nameDvoskin : nameRovaletti;
   const ownerImg = dataOwner === "dvoskin" ? dvoskin : rovaletti;
@@ -30,14 +39,13 @@ const Navbar = () => {
 
   const NAV_TEXTS = ["home", "about", "projects", "technologies", "contact"];
 
-  
   return (
-    <nav className=" px-12 flex flex-row justify-between items-center shadow-lg bg-white w-full h-20 text-black fixed  dark:bg-slate-900 dark:text-white">
-      <Nav_Logo id="leftContainer" ownerImg={ownerImg} ownerName={ownerName}/>
+    <nav className="px-12 flex flex-row justify-between items-center shadow-lg bg-white w-full h-20 text-black fixed dark:bg-slate-900 dark:text-white">
+      <Nav_Logo id="leftContainer" ownerImg={ownerImg} ownerName={ownerName} />
 
       <div id="rightContainer" className="flex flex-row relative">
-        <Nav_LinksContainerSmall handleRenderMenu={handleRenderMenu} renderedMenu={renderedMenu} NAV_TEXTS={NAV_TEXTS} className="lg:hidden"/>
-        <Nav_LinksContainerLarge NAV_TEXTS={NAV_TEXTS}/>
+        <Nav_LinksContainerSmall handleRenderMenu={handleRenderMenu} renderedMenu={renderedMenu} NAV_TEXTS={NAV_TEXTS} className="lg:hidden" />
+        <Nav_LinksContainerLarge NAV_TEXTS={NAV_TEXTS} />
         <Nav_Bars renderedMenu={renderedMenu} handleRenderMenu={handleRenderMenu} />
         <Nav_Themes darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       </div>

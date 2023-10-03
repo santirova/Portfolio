@@ -2,14 +2,10 @@ import github from "../assets/contactIcons/github.svg";
 import linkedin from "../assets/contactIcons/linkedin-color.svg";
 import gmail from "../assets/contactIcons/gmail-color.svg";
 import whatsapp from "../assets/contactIcons/whatsapp-color.svg";
-import { dataDvoskinContact } from "../data/dataDvoskin/dataContact";
-import { dataRovalettiContact } from "../data/dataRovaletti/dataContact";
+import { dataContact} from "../data/dataRovaletti/dataContact";
 
 
 const ContactIcons = () => {
-  const dataOwner = import.meta.env.VITE_DATAOWNER;
-  const dataContact =
-    dataOwner === "dvoskin" ? dataDvoskinContact : dataRovalettiContact;
   const WHATSAPP_MESSAGE =
     "Hi! My name is...\nI saw your online portfolio. I would like to contact you...\nThanks in advance!";
   const encodedMessage = encodeURIComponent(WHATSAPP_MESSAGE);

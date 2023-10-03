@@ -2,7 +2,7 @@ import viandaexpressImg from "../../assets/projectsImages/viandaExpress.png";
 import videogamesPiImg from "../../assets/projectsImages/videogamesPI.png";
 import portfolioImg from "../../assets/projectsImages/Portafolio.png";
 import vibiImg from "../../assets/projectsImages/VIBI.png";
-const dataRovalettiProjects = [
+const dataProjects = [
   {
     name: "Vibi",
     description:
@@ -107,4 +107,4 @@ const dataRovalettiProjects = [
   },
 ];
 
-export { dataRovalettiProjects };
+export { dataProjects };

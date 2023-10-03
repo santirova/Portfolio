@@ -6,9 +6,9 @@ import Nav_LinksContainerLarge from "./Nav_LinksContainerLarge";
 import Nav_Bars from "./Nav_Bars";
 
 import { nameRovaletti } from "../data/dataRovaletti/dataNav";
-import { nameDvoskin } from "../data/dataDvoskin/dataNav";
-import dvoskin from "../assets/profileImage/dvoskin.jpg";
-import rovaletti from "../assets/profileImage/rovaletti.jpg";
+import logodark from "../assets/SR-logo.png";
+import logowhite from "../assets/SR-logo-blanco.png";
+
 
 const Navbar = () => {
   const isDarkModeEnabled = localStorage.getItem("darkMode") === "true";
@@ -28,20 +28,18 @@ const Navbar = () => {
     localStorage.setItem("darkMode", newDarkMode.toString());
   };
 
-  const dataOwner = import.meta.env.VITE_DATAOWNER;
-  const ownerName = dataOwner === "dvoskin" ? nameDvoskin : nameRovaletti;
-  const ownerImg = dataOwner === "dvoskin" ? dvoskin : rovaletti;
+  const logo = darkMode ? logowhite : logodark
 
   const [renderedMenu, setRenderedMenu] = useState(false);
   const handleRenderMenu = () => {
     setRenderedMenu(!renderedMenu);
   };
 
-  const NAV_TEXTS = ["home", "about", "projects", "technologies", "contact"];
+  const NAV_TEXTS = ["home", "about", "projects", "skills", "contact"];
 
   return (
-    <nav className="px-12 flex flex-row justify-between items-center shadow-lg bg-white w-full h-20 text-black fixed dark:bg-slate-900 dark:text-white">
-      <Nav_Logo id="leftContainer" ownerImg={ownerImg} ownerName={ownerName} />
+    <nav className=" max-md:px-6 px-12 flex flex-row justify-between items-center shadow-lg bg-white w-full h-20 text-black fixed dark:bg-slate-900 dark:text-white">
+      <Nav_Logo id="leftContainer" ownerImg={logo} ownerName={nameRovaletti} />
 
       <div id="rightContainer" className="flex flex-row relative">
         <Nav_LinksContainerSmall handleRenderMenu={handleRenderMenu} renderedMenu={renderedMenu} NAV_TEXTS={NAV_TEXTS} className="lg:hidden" />

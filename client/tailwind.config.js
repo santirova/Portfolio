@@ -29,6 +29,7 @@ export default {
         'mytextd': 'white', /* white */ 
         'myaccd': '#6366f1' /* indigo-500 */
       },
+      
     },
   },
   plugins: [],

@@ -21,10 +21,10 @@ const databases = [
   "SQLite",
   ];
 
-const dataRovalettiTechnologies = {
+const dataTechnologies = {
   languages,
   front, 
   back,
   databases,
 };
-export default dataRovalettiTechnologies;
+export default dataTechnologies;

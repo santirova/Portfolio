@@ -38,7 +38,7 @@ const Navbar = () => {
   const NAV_TEXTS = ["home", "about", "projects", "skills", "contact"];
 
   return (
-    <nav className=" max-md:px-6 px-12 flex flex-row justify-between items-center shadow-lg bg-white w-full h-20 text-black fixed dark:bg-slate-900 dark:text-white">
+    <nav className=" max-md:px-12 px-12 flex flex-row justify-between items-center shadow-lg bg-white w-full h-20 text-black fixed dark:bg-slate-900 dark:text-white">
       <Nav_Logo id="leftContainer" ownerImg={logo} ownerName={nameRovaletti} />
 
       <div id="rightContainer" className="flex flex-row relative">

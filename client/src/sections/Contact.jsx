@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <main
       name="contact"
-      className="flex flex-col w-full items-center py-12 lg:py-24 bg-mybg1 dark:bg-mybg1d"
+      className="flex flex-col w-full items-center py-24 lg:py-24 bg-mybg1 dark:bg-mybg1d"
     >
       <div className="flex flex-col items-center w-11/12 lg:w-4/5 xl:w-3/5">
         <h1 className="mb-8 text-3xl font-semibold text-myacc dark:text-myaccd md:text-5xl">
@@ -17,7 +17,9 @@ const Contact = () => {
         <p className="font-sans max-w-lg text-center mb-8 lg:text-lg xl:text-xl">
           {TEXT}
         </p>
-        <Form />
+        <div className="flex items-center justify-center"> {/* Agrega este div */}
+          <Form />
+        </div>
         <ContactIcons />
       </div>
     </main>

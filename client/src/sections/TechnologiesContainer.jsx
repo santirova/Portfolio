@@ -14,7 +14,7 @@ const TechnologiesContainer = () => {
   ];
 
   return (
-    <section className="bg-mybg2 w-full  dark:bg-mybg2d px-12 py-24" name="skills">
+    <section className="bg-mybg1 w-full  dark:bg-mybg1d px-12 py-24" name="skills">
       <div className="container mx-auto">
         <h1 className="text-3xl md:text-5xl font-semibold text-myacc dark:text-myaccd mb-12 text-center">
           SKILLS

@@ -1,7 +1,7 @@
 import icons from "../assets/technologyIcons/indexIcons"; // Importa el objeto con todas las imágenes SVG
 const TechnologiesArticle = ({ label, technologiesArray }) => {
   return (
-    <div className="p-4 bg-mybg1 dark:bg-mybg1d rounded-lg shadow-md">
+    <div className="p-4 bg-mybg2 dark:bg-mybg2d rounded-lg shadow-md">
       <h2 className="text-xl font-semibold mb-4">{label}</h2>
       <div className="flex flex-wrap justify-center">
         {technologiesArray.map((technologyItem, index) => (

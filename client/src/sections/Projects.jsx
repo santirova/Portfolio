@@ -17,7 +17,7 @@ const Projects = () => {
   
 
   return (
-    <div className="flex flex-col w-full items-center py-24 bg-mybg1 dark:bg-mybg1d" name="projects">
+    <div className="flex flex-col w-full items-center py-24 bg-mybg2 dark:bg-mybg2d" name="projects">
       <div className="flex flex-col w-full max-w-screen-xl items-center">
         <h1 className="mb-12 text-3xl font-semibold text-myacc dark:text-myaccd md:text-5xl">
           PROJECTS

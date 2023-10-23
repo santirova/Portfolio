@@ -43,11 +43,11 @@ const Form = () => {
   };
 
   return (
-    <div className="w-full lg:w-1/2 mb-16">
-			<div className="leading-loose">
+    <div className="w-full">
+			<div >
 				<form
 					onSubmit={onSubmit}
-					className="max-w-xl m-4 p-6 sm:p-10 bg-mybg2 dark:bg-mybg2d rounded-xl shadow-xl text-left"
+					className="max-w-xl m-4 p-6 sm:p-10 bg-mybg2 dark:bg-mybg2d rounded-xl shadow-xl"
 				>
           <Form_Input Element="input" name="name" labelText="Full Name" value={inputs.name} onChange={onChange} placeholder="Your name"/>
           <Form_Input Element="input" name="email" labelText="Email" value={inputs.email} onChange={onChange} placeholder="Your email"/>

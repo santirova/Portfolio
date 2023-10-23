@@ -15,10 +15,13 @@ const back = [
   "Express" ,
   "Sequelize" ,
   "Prisma" ,
+  "Mongoose"
 ];
 const databases = [
   "PostgreSQL",
   "SQLite",
+  "MongoDB",
+  "MySQL"
   ];
 
 const dataTechnologies = {

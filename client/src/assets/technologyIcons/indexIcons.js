@@ -14,6 +14,10 @@ import Prisma from "./prisma-color.svg";
 import TypeScript from "./typescript-color.svg";
 import Bootstrap from "./bootstrap-color.svg";
 import SQLite from "./sqlite-color.svg";
+import MongoDB from "./mongodb-color.svg"
+import Mongoose from "./mongoose-color.svg"
+import MySQL from "./mysql-color.svg"
+
 
 
 const icons = {
@@ -31,7 +35,10 @@ const icons = {
   Tailwind,
   Prisma,
   Bootstrap,
-  SQLite
+  SQLite,
+  MongoDB,
+  Mongoose,
+  MySQL
 };
 
 export default icons;

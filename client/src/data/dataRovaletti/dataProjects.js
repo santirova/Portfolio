@@ -2,7 +2,32 @@ import viandaexpressImg from "../../assets/projectsImages/viandaExpress.png";
 import videogamesPiImg from "../../assets/projectsImages/videogamesPI.png";
 import portfolioImg from "../../assets/projectsImages/Portafolio.png";
 import vibiImg from "../../assets/projectsImages/VIBI.png";
+import miFinanzImg from "../../assets/projectsImages/MiFinanz.png"
 const dataProjects = [
+  {
+    name: "MiFinanz",
+    description:
+      "A web app designed to assist users in efficiently managing their personal finances by tracking expenses and income effortlessly.",
+    technologies: [
+      "Javascript",
+      "NextJs",
+      "Tailwind",
+      "Figma",
+      "Redux Toolkit",
+      "NodeJs",
+      "Express",
+      "Sequelize",
+      "MySQL",
+    ],
+    tasks: [
+
+    ],
+    deploy: "https://c14-17-ft-node-react.vercel.app/",
+    youtube:
+      "",
+    repository: "https://github.com/No-Country/c14-17-ft-node-react",
+    image: miFinanzImg,
+  },
   {
     name: "Vibi",
     description:

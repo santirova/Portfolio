@@ -1,9 +1,33 @@
 import viandaexpressImg from "../../assets/projectsImages/viandaExpress.png";
 import videogamesPiImg from "../../assets/projectsImages/videogamesPI.png";
-import portfolioImg from "../../assets/projectsImages/Portafolio.png";
 import vibiImg from "../../assets/projectsImages/VIBI.png";
 import miFinanzImg from "../../assets/projectsImages/MiFinanz.png"
+import eventwaveImg from "../../assets/projectsImages/eventwave.png"
 const dataProjects = [
+  {
+    name: "EventWave",
+    description:
+      "An online platform for seamless event management. Users can create, book, and comment on events, fostering a vibrant community of event enthusiasts.",
+    technologies: [
+      "Javascript",
+      "React-Vite",
+      "Tailwind",
+      "Figma",
+      "Redux Toolkit",
+      "NodeJs",
+      "Express",
+      "Mongoose",
+      "MongoDB",
+    ],
+    tasks: [
+
+    ],
+    deploy: "https://s12-02-m-node-react-nine.vercel.app/",
+    youtube:
+      "",
+    repository: "https://github.com/No-Country/s12-02-m-node-react",
+    image: eventwaveImg,
+  },
   {
     name: "MiFinanz",
     description:
@@ -108,28 +132,7 @@ const dataProjects = [
     youtube:null,
     repository: "https://www.github.com/gastondvoskin/PFecommerce11B",
     image:videogamesPiImg,
-  },
-  {
-    name: "Portfolio",
-    description:
-      "This portoflio was developed from scratch by Gastón Dvoskin and Santiago Rovaletti.",
-    technologies: [
-      "JavaScript",
-      "React",
-      "Tailwind",
-      "NodeJs",
-      "Express",
-      "SendGrid",
-    ],
-    tasks: [
-
-    ],
-    deploy: "https://santiagorovaletti.vercel.app/",
-    youtube:
-      "",
-    repository: "https://github.com/santirova/Portfolio",
-    image: portfolioImg,
-  },
+  }
 ];
 
 export { dataProjects };

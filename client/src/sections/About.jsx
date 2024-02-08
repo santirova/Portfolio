@@ -1,6 +1,6 @@
 import { dataRovalettiAbout } from "../data/dataRovaletti/dataAbout";
 import profileImg from "../assets/profileImage/rovaletti.jpg";
-import cvRovaletti from "../assets/CV/SANTIAGOROVALETTICV-10-23.pdf";
+import cvRovaletti from "../assets/CV/SantiagoRovalettiCV-resumido-12-23.pdf";
 import Button from "../components/Button";
 
 const About = () => {

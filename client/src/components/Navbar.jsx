@@ -35,7 +35,7 @@ const Navbar = () => {
     setRenderedMenu(!renderedMenu);
   };
 
-  const NAV_TEXTS = ["home", "about", "projects", "skills", "contact"];
+  const NAV_TEXTS = ["home", "about", "skills", "projects", "contact"];
 
   return (
     <nav className=" max-md:px-12 px-12 flex flex-row justify-between items-center shadow-lg bg-white w-full h-20 text-black fixed dark:bg-slate-900 dark:text-white">

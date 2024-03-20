@@ -1,5 +1,5 @@
 import viandaexpressImg from "../../assets/projectsImages/viandaExpress.png";
-import videogamesPiImg from "../../assets/projectsImages/videogamesPI.png";
+import gamelabImg from "../../assets/projectsImages/gamelab.png";
 import vibiImg from "../../assets/projectsImages/VIBI.png";
 import miFinanzImg from "../../assets/projectsImages/MiFinanz.png"
 import eventwaveImg from "../../assets/projectsImages/eventwave.png"
@@ -76,7 +76,7 @@ const dataProjects = [
     image: vibiImg,
   },
   {
-    name: "Vianda express",
+    name: "Vianda Express",
     description:
       "Development of a healthy meal Ecommerce platform that allows customers to filter, add products to their cart, make online purchases, edit their data, access their favorites, and leave reviews. The admin can view statistics, manage orders, and make modifications to the products.",
     technologies: [
@@ -104,15 +104,15 @@ const dataProjects = [
       "Filtros combinados en el front tanto para el cliente como para el administrador",
       "Implementacion de Graficos para el administrador con NivoCharts",
     ],
-    deploy: "https://viandaexpress.vercel.app/",
+    deploy: "https://viandaexpress-arg.vercel.app/",
     youtube:
       "https://www.youtube.com/watch?v=9LU6qFour2M&ab_channel=SilvioJuarez",
-    repository: "https://www.github.com/gastondvoskin/PFecommerce11B",
+    repository: "https://github.com/santirova/ViandaExpress",
     image:viandaexpressImg,
   },
 
   {
-    name: "Videogames PI",
+    name: "GAMELAB",
     description:
       "Development of an individual full-stack application with the aim of rendering and filtering video games from an API and a proprietary database.",
     technologies: [
@@ -128,10 +128,10 @@ const dataProjects = [
     tasks: [
       "Complete the entire full-stack application individually following the guidelines specified by Soy Henry",
     ],
-    deploy: "https://video-games-pi-vert.vercel.app",
+    deploy: "https://gamelab-arg.vercel.app/",
     youtube:null,
-    repository: "https://www.github.com/gastondvoskin/PFecommerce11B",
-    image:videogamesPiImg,
+    repository: "https://github.com/santirova/Gamelab",
+    image:gamelabImg,
   }
 ];
 

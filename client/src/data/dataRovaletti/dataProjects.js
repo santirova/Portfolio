@@ -46,10 +46,10 @@ const dataProjects = [
     tasks: [
 
     ],
-    deploy: "https://c14-17-ft-node-react.vercel.app/",
+    deploy: "https://mi-finanz.vercel.app",
     youtube:
       "",
-    repository: "https://github.com/No-Country/c14-17-ft-node-react",
+    repository: "https://github.com/santirova/MiFinanz",
     image: miFinanzImg,
   },
   {

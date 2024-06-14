@@ -3,7 +3,33 @@ import gamelabImg from "../../assets/projectsImages/gamelab.png";
 import vibiImg from "../../assets/projectsImages/VIBI.png";
 import miFinanzImg from "../../assets/projectsImages/MiFinanz.png"
 import eventwaveImg from "../../assets/projectsImages/eventwave.png"
+import jobLinkerImg from "../../assets/projectsImages/JobLinker.png"
 const dataProjects = [
+  {
+    name: "JobLinker",
+    description:
+      "JobLinker is a web app for managing job applications, allowing users to create profiles, apply for jobs, and track their application statuses in one place.",
+    technologies: [
+      "Javascript",
+      "React-Vite",
+      "Material-UI",
+      "Redux Toolkit",
+      "NodeJs",
+      "Express",
+      "Cloudinary",
+      "JWT",
+      "Mongoose",
+      "MongoDB",
+    ],
+    tasks: [
+
+    ],
+    deploy: "https://s12-02-m-node-react-nine.vercel.app/",
+    youtube:
+      "",
+    repository: "https://github.com/No-Country/s12-02-m-node-react",
+    image: jobLinkerImg,
+  },
   {
     name: "EventWave",
     description:
